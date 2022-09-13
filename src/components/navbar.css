@@ -1,0 +1,23 @@
+ h1{
+    color: rgb(102, 172, 75);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color:rgba(103, 172, 75, 0.822) ; 
+}
+
+#sectionsNav ul {
+    list-style: none;
+}
+
+#sectionsNav ul li{
+    display: inline-block;
+}
+
+#sectionsNav ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color:rgb(102, 172, 75);
+}
