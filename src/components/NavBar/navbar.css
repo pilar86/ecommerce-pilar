@@ -15,8 +15,8 @@ h2{
     display: inline-block;
 }
 
-#sectionsNav ul li a{
-    display: block;
+#sectionsNav ul li {
+    display: inline;
     padding: 20px;
     text-decoration: none;
     color:rgb(102, 172, 75);

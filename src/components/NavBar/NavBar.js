@@ -1,4 +1,6 @@
 import "./navbar.css";
+import CartWidget from "./CartWidget";
+
 
 function NavBar () {
     return (
@@ -6,15 +8,14 @@ function NavBar () {
         <h1>
           <strtong> Natural </strtong> 
         </h1>
-        <h2>
-             Beauty & Skin Care
-        </h2>
+        <CartWidget/>
+        
         <div id ="sectionsNav"> 
             <ul>
-                <li><a href= "#">Home</a></li>
-                <li><a href= "#">Cosmetics</a></li>
-                <li><a href= "#">Hair</a></li>
-                <li><a href= "#">Body</a></li>
+                <li>Home</li>
+                <li>Cosmetics</li>
+                <li>Hair</li>
+                <li>Body</li>
             </ul>
         </div>
       </div>
