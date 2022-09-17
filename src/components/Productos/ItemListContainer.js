@@ -8,21 +8,21 @@ function ItemListContainer(props) {
         <h2>{ "Beauty & Skin Care" }</h2>
         <div className="main-container">
             <Card
-                img=".../public/assets/products/img/Cosmetic.jpg "
+                img="./assets/productos/img/Cosmetics.jpg"
                 title="CATEGORIA 1"
                 detail="Lorem ipsum"
                 precio={1000}
             />
 
             <Card
-                img="../public/assets/products.Hair.jpg"
+                img="./assets/productos/img/Hair.jpg"
                 title="CATEGORIA 2"
                 detail="Lorem ipsum"
                 precio={1900}
             />
 
             <Card
-                img="../public/assets/products.Cosmetics.jpg"
+                img="./assets/productos/img/SkinCare.jpg"
                 title="CATEGORIA 3"
                 detail="Lorem ipsum"
                 precio={2500}
