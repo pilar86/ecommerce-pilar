@@ -9,6 +9,8 @@ h2{
 
 #sectionsNav ul {
     list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 #sectionsNav ul li{
@@ -16,8 +18,9 @@ h2{
 }
 
 #sectionsNav ul li {
-    display: inline;
-    padding: 20px;
+    padding: 12px;
     text-decoration: none;
     color:rgb(102, 172, 75);
+    font-weight: 300px;
+    letter-spacing: 2px;
 }

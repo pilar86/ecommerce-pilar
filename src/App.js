@@ -7,12 +7,14 @@ function App() {
     <div className="App">
       <NavBar/>
       <ItemListContainer greetings = " Beauty & Skin Care"/>
+      
   {/*    
       <Carrousel/>
       <Products/>
       <Footer/>  
   */}  
     </div>
+     
   );
 }
 

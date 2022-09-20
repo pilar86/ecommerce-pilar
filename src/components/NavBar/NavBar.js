@@ -6,7 +6,7 @@ function NavBar () {
     return (
       <div className="navbar">
         <h1>
-          <strtong> Natural </strtong> 
+           Natural 
         </h1>
         <CartWidget/>
         
