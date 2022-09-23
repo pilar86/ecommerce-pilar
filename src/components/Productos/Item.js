@@ -1,9 +1,9 @@
 import React from 'react';
-import "./card.css";
+import "./Item.css";
 import ItemCount from "../ItemCount/ItemCount";
 
 
-function Card(props) {
+function Item(props) {
     let { img, title, detail, price} = props;
     /* Hooks*/
 
@@ -24,14 +24,18 @@ function Card(props) {
             </div>
 
             <button>
-                ver más
+                Agregar al Carrito
             </button>
-            <ItemCount initial={1} stock={10} onAdd={onAdd}/>
-            <ItemCount initial={1} stock={15} onAdd={onAdd}/>
-            <ItemCount initial={1} stock={0} onAdd={onAdd}/>
-            
+     
         </div>         
     );
 }
 
-export default Card;
+export default Item;
+
+/* 
+     <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        <ItemCount initial={1} stock={15} onAdd={onAdd}/>
+        <ItemCount initial={1} stock={0} onAdd={onAdd}/>
+
+        */

@@ -1,38 +1,32 @@
-import React from 'react';
-import Card from "./Card";
-import "./itemListContainer.css";
+import React, {useState, useEffect} from 'react';
 
+import "./itemListContainer.css";
+import getItems from "../../services/mockAPI";
+import ItemList from "../../components/Productos/ItemList";
 
 
 function ItemListContainer(props) {
+
+        let [data, setData] = useState([]);
+
+        useEffect(
+                ()=>{
+                getItems().then((respDatos)=>{
+                setData (respDatos);
+                console.log("data recibida",  data);
+                });
+    },[]);
+    
+    
+    
     return (
-        <div> 
-        <h2>{ "Beauty & Skin Care" }</h2>
-        <div className="main-container">
-            <Card
-                img="./assets/productos/img/Cosmetics.jpg"
-                title="CATEGORIA 1"
-                detail="Descripción"
-                price={1000}    
-            />
-           
-
-            <Card
-                img="./assets/productos/img/Hair.jpg"
-                title="CATEGORIA 2"
-                detail="Descripción"
-                price={1900}
-            />
-
-            <Card
-                img="./assets/productos/img/SkinCare.jpg"
-                title="CATEGORIA 3"
-                detail="Lorem ipsum"
-                price={2500}
-            />
+        <div>
+        <div className="main container">
+            <ItemList data = {data}/>  
         </div>
         </div>
-    )
+    );
 }
+
 
 export default ItemListContainer;
